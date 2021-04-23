@@ -152,7 +152,6 @@ public class FXMLDocumentController implements Initializable {
 //        try {
 //            http_return = http_test_check.post(url,data);
 //        } catch (IOException e) {
-//            // TODO Auto-generated catch block
 //        }
 //        JSONObject jsonObject = JSON.parseObject(http_return.body().toString());
 //        Config.USER_TOKEN = jsonObject.getString("token");
