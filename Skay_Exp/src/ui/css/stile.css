@@ -1,0 +1,185 @@
+.list-cell {
+    -fx-control-inner-background:  #2F3136 ;
+    -fx-control-inner-background-alt:  #202225;
+    -fx-font-size: 13px;
+    -fx-font-family: 'Moon';
+    -fx-text-alignment : center;
+    -fx-alignment:CENTER_LEFT;
+}
+
+.list-cell:filled:selected {
+    -fx-background-color: #0E9654;
+    -fx-text-fill: #b0b0b0;
+}
+
+.text-area .scroll-pane .content {
+    -fx-background-color: #202225;
+}
+
+.list-view{
+    -fx-alignment:CENTER_LEFT;
+    -fx-border-color:  #2F3136;
+    -fx-background-color: #2F3136;
+}
+
+.scroll-bar{
+    -fx-animated :true;
+    -fx-alignment : CENTER_RIGHT;
+    -fx-border-color: #2F3136;
+    -fx-background-color: #2F3136;
+    -fx-control-inner-background: #2F3136;
+}
+
+
+
+
+
+.list-view:focused .list-cell:filled:selected {
+    -fx-background-color: #0E9654;
+    -fx-text-fill: white;
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track{
+    -fx-background-color:transparent;
+    -fx-border-color:transparent;
+    -fx-background-radius: 0em;
+    -fx-border-radius:2em;
+}
+
+.scroll-bar:horizontal .increment-button ,
+.scroll-bar:horizontal .decrement-button {
+    -fx-background-color:transparent;
+    -fx-background-radius: 0em;
+    -fx-padding:0 0 10 0;
+
+}
+
+.scroll-bar:vertical .increment-button ,
+.scroll-bar:vertical .decrement-button {
+
+    -fx-background-color:transparent;
+    -fx-background-radius: 0em;
+    -fx-padding:0 10 0 0;
+
+}
+
+.scroll-bar .increment-arrow,
+.scroll-bar .decrement-arrow{
+    -fx-shape: " ";
+    -fx-padding:0;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-insets: 2, 0, 0;
+    -fx-background-radius: 2em;
+    -fx-background-color: #0E9654;
+}
+
+.split-pane{
+    -fx-background-color : #2F3136;
+}
+
+.split-pane-divider {
+    -fx-background-color: #2F3136;
+}
+
+.splitdivider{
+    -fx-background-color: #202225;
+}
+
+.button {
+    -fx-background-radius : 50;
+    -fx-border-radius: 50;
+}
+
+.button:pressed:hover {
+    -fx-border-color : rgba(14, 150, 84,1);
+}
+
+.button:hover {
+    -fx-border-color : white;
+}
+
+.chart {
+    -fx-padding: 0px;
+    -fx-background-color:  #202225;
+
+}
+.chart-content {
+    -fx-padding: 0px;
+    -fx-background-color:  #202225;
+    -fx-stroke-fill : red;
+}
+
+.chart-legend{
+    -fx-background-radius: 15;
+    -fx-background-color: #2F3136;
+}
+
+.chart-legend-item {
+    -fx-text-fill: white;
+    -fx-font-size: 10px ;
+}
+
+.axis {
+    AXIS_COLOR: transparent;
+}
+
+.chart-vertical-grid-lines {
+    -fx-stroke:  rgba(255, 255, 255, 0);
+}
+.chart-horizontal-grid-lines {
+    -fx-stroke: rgba(255, 255, 255, 0.1);
+}
+
+.chart-plot-background {
+    -fx-background-color: transparent;
+}
+
+.axis:top > .axis-label,
+.axis:left > .axis-label {
+    -fx-padding: 0;
+}
+.axis:bottom > .axis-label,
+.axis:right > .axis-label {
+    -fx-padding: 0;
+}
+.jfx-snackbar-content {
+    -fx-background-color: white;
+    -fx-background-radius : 2;
+}
+
+.chart-symbol {
+    -fx-background-radius: 0px ;
+    -fx-padding: 10px ;
+}
+
+.jfx-snackbar-toast {
+    -fx-text-fill: #202225;
+}
+.jfx-snackbar-action {
+    -fx-text-fill: #ff4081;
+}
+
+.chart-pie{
+    -fx-border-color: rgba(1,1,1,0);
+    -fx-border-width: 0px;
+}
+
+.chart-pie-label-line {
+    -fx-stroke: white;
+    -fx-fill: white;
+}
+
+.chart-pie-label {
+    -fx-fill: white;
+    -fx-font-size: 1em;
+}
+
+
+.data0.chart-pie { -fx-pie-color: white; }
+.data1.chart-pie { -fx-pie-color: rgba(1,1,1,0); }
+
+

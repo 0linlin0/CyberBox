@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<?import com.jfoenix.controls.*?>
+
+<AnchorPane id="AnchorPane" cache="true" prefHeight="690.0" prefWidth="1280.0" style="-fx-background-color: #202225;" stylesheets="@css/stile.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.FXMLDocumentController">
+   <children>
+      <Pane fx:id="drag_panel" prefHeight="22.0" prefWidth="1280.0" style="-fx-background-color: #202225;">
+         <children>
+            <ImageView cache="true" cacheHint="SPEED" fitHeight="13.0" fitWidth="13.0" layoutX="1214.0" layoutY="4.0" nodeOrientation="INHERIT" onMouseClicked="#iconized" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@immagini/afinestra.png" />
+               </image>
+            </ImageView>
+            <ImageView cache="true" cacheHint="SPEED" fitHeight="13.0" fitWidth="13.0" layoutX="1247.0" layoutY="3.0" nodeOrientation="INHERIT" onMouseClicked="#exit" pickOnBounds="true" preserveRatio="true" smooth="false">
+               <image>
+                  <Image url="@immagini/exit.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-1.0" layoutY="4.0" prefHeight="15.0" prefWidth="70.0" text="Noname" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Moon Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="79.0" layoutY="5.0" prefHeight="14.0" prefWidth="230.0" text="V.0.0.1 仅供安全研究使用" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="11.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutY="22.0" prefHeight="678.0" prefWidth="70.0" style="-fx-background-color: #202225;">
+         <children>
+            <Pane layoutY="14.0" prefHeight="100.0" prefWidth="70.0">
+               <children>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" x="15.0" y="15.0">
+                     <image>
+                        <Image url="@immagini/omino.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="1.0" layoutY="70.0" prefHeight="15.0" prefWidth="70.0" text="SKAY" textAlignment="RIGHT" textFill="#c5c5c5">
+                     <font>
+                        <Font name="Moon Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="24.0" layoutY="86.0" opacity="0.7" prefHeight="15.0" prefWidth="25.0" />
+                  <JFXButton layoutX="5.0" layoutY="5.0" onMouseClicked="#openProfile" prefHeight="60.0" prefWidth="60.0" ripplerFill="WHITE" style="-fx-background-radius: 50;" stylesheets="@css/stile.css" text=" " textAlignment="CENTER" />
+               </children>
+            </Pane>
+            <VBox alignment="TOP_CENTER" layoutY="115.0" prefHeight="563.0" prefWidth="70.0">
+               <children>
+                  <Pane layoutX="10.0" layoutY="257.0" prefHeight="70.0" prefWidth="70.0">
+                     <children>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="22.5" layoutY="22.5" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@immagini/home.png" />
+                           </image>
+                        </ImageView>
+                        <JFXButton layoutX="5.0" layoutY="5.0" onMouseClicked="#openHome" prefHeight="60.0" prefWidth="60.0" ripplerFill="WHITE" style="-fx-background-radius: 50;" stylesheets="@css/stile.css" text=" " textAlignment="CENTER" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Pane>
+                  <Pane prefHeight="70.0" prefWidth="70.0">
+                     <children>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="22.5" layoutY="22.5" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@immagini/settings.png" />
+                           </image>
+                        </ImageView>
+                        <JFXButton layoutX="5.0" layoutY="5.0" onMouseClicked="#openSettings" prefHeight="60.0" prefWidth="60.0" ripplerFill="WHITE" stylesheets="@css/stile.css" text=" " textAlignment="CENTER" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Pane>
+                  <Pane layoutX="10.0" layoutY="145.0" prefHeight="70.0" prefWidth="70.0">
+                     <children>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="22.5" layoutY="22.5" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@immagini/edit.png" />
+                           </image>
+                        </ImageView>
+                        <JFXButton layoutX="5.0" layoutY="5.0" onMouseClicked="#openNote" prefHeight="60.0" prefWidth="60.0" ripplerFill="WHITE" style="-fx-background-radius: 50;" stylesheets="@css/stile.css" text=" " textAlignment="CENTER" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Pane>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" top="35.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+         </children>
+      </Pane>
+      <Pane layoutX="70.0" layoutY="650.0" prefHeight="50.0" prefWidth="240.0" style="-fx-background-color: #2A2C31; -fx-background-radius: 0 0 0 10;">
+         <children>
+            <Label fx:id="data_label" alignment="CENTER" contentDisplay="CENTER" layoutX="58.0" layoutY="-2.0" mouseTransparent="true" prefHeight="50.0" prefWidth="177.0" text="--/--/---- xx:xx:xx" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Moon Bold" size="13.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="23.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@immagini/clock.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="delay_label" alignment="CENTER" contentDisplay="CENTER" layoutX="58.0" layoutY="24.0" prefHeight="25.0" prefWidth="18.0" text="3" textFill="#0f9d58">
+               <font>
+                  <Font name="Moon Bold" size="13.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <AnchorPane fx:id="delayPane" layoutX="70.0" layoutY="22.0" prefHeight="628.0" prefWidth="240.0" style="-fx-background-color: #2F3136; -fx-background-radius: 10 0 0 0;" visible="false">
+         <children>
+            <VBox layoutY="172.0" prefHeight="241.0" prefWidth="240.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="49.0" prefWidth="240.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="54.0" prefWidth="70.0" text="OPACITY" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Moon Light" size="13.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </HBox.margin>
+                        </Label>
+<!--                        <JFXSlider fx:id="slider_opacity" min="20.0" onMouseDragged="#opacitySlider" onMousePressed="#opacitySlider" onMouseReleased="#opacitySlider" prefHeight="14.0" prefWidth="143.0" value="100.0">-->
+<!--                           <HBox.margin>-->
+<!--                              <Insets left="10.0" right="10.0" />-->
+<!--                           </HBox.margin>-->
+<!--                        </JFXSlider>-->
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="108.0" prefHeight="49.0" prefWidth="240.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="49.0" prefWidth="120.0" text="alert is under " textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Moon Light" size="13.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="2.0" right="2.0" />
+                           </HBox.margin>
+                        </Label>
+<!--                        <JFXTextField alignment="CENTER" focusColor="WHITE" labelFloat="true" prefHeight="25.0" prefWidth="60.0" promptText="bitcoin" style="-fx-text-inner-color: white;" unFocusColor="BLACK">-->
+<!--                           <HBox.margin>-->
+<!--                              <Insets left="4.0" right="4.0" />-->
+<!--                           </HBox.margin>-->
+<!--                           <font>-->
+<!--                              <Font name="Moon Light" size="13.0" />-->
+<!--                           </font>-->
+<!--                        </JFXTextField>-->
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="15.0" layoutY="20.0" prefHeight="49.0" prefWidth="240.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="54.0" prefWidth="70.0" text="DELAY" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Moon Light" size="13.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </HBox.margin>
+                        </Label>
+<!--                        <JFXSlider fx:id="delay_opacity" blockIncrement="1.0" max="10.0" min="2.0" onMouseDragged="#delaySlider" onMousePressed="#delaySlider" onMouseReleased="#toast" prefHeight="14.0" prefWidth="143.0" value="3.0">-->
+<!--                           <HBox.margin>-->
+<!--                              <Insets left="10.0" right="10.0" />-->
+<!--                           </HBox.margin>-->
+<!--                        </JFXSlider>-->
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutY="63.0" prefHeight="70.0" prefWidth="240.0" text="SETTINGS" textAlignment="CENTER" textFill="#c5c5c5">
+               <font>
+                  <Font name="Moon Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="homePane" layoutX="70.0" layoutY="22.0" prefHeight="628.0" prefWidth="240.0" style="-fx-background-color: #2F3136; -fx-background-radius: 10 0 0 0;" visible="false" />
+      <AnchorPane fx:id="profilePane" layoutX="70.0" layoutY="22.0" prefHeight="628.0" prefWidth="240.0" style="-fx-background-color: #2F3136; -fx-background-radius: 10 0 0 0;">
+         <children>
+            <ListView fx:id="vul_list" layoutX="1.0" layoutY="47.0" prefHeight="581.0" prefWidth="240.0" />
+            <Label layoutX="30.0" layoutY="70.0" text="CVE-2020-11000" textFill="#fffdfd">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="28.0" layoutY="117.0" text="CVE-2020-11000" textFill="#fffdfd">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="166.0" text="CVE-2020-11000" textFill="#fffdfd">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="207.0" text="CVE-2020-11000" textFill="#fffdfd">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="251.0" text="CVE-2020-11000" textFill="#fffdfd">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="1040.0" layoutY="72.0" prefHeight="628.0" prefWidth="240.0" style="-fx-background-color: #2F3136; -fx-background-radius: 0 0 10 0;">
+         <children>
+            <Pane layoutY="209.0" prefHeight="419.0" prefWidth="240.0" style="-fx-background-color: #202225;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="209.0">
+               <children>
+                  <Label fx:id="volume" contentDisplay="CENTER" layoutX="92.0" layoutY="7.0" prefHeight="17.0" prefWidth="90.0" text="执行参数说明" textAlignment="CENTER" textFill="#0f9d58" />
+                  <Label alignment="BOTTOM_CENTER" contentDisplay="CENTER" layoutX="5.0" layoutY="398.0" prefHeight="14.0" prefWidth="230.0" text="Copyright © 2020 Skay" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Calibri" size="11.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="volume1" contentDisplay="CENTER" layoutX="41.0" layoutY="43.0" prefHeight="17.0" prefWidth="90.0" text="target 目标IP" textAlignment="CENTER" textFill="#0f9d58" />
+                  <Label fx:id="volume11" contentDisplay="CENTER" layoutX="40.0" layoutY="72.0" prefHeight="17.0" prefWidth="90.0" text="port 端口" textAlignment="CENTER" textFill="#0f9d58" />
+                  <Label fx:id="volume111" contentDisplay="CENTER" layoutX="45.0" layoutY="103.0" prefHeight="17.0" prefWidth="90.0" text="port 端口" textAlignment="CENTER" textFill="#0f9d58" />
+               </children>
+            </Pane>
+            <Pane prefHeight="206.0" prefWidth="240.0" style="-fx-background-color: #202225;">
+               <children>
+                  <Label layoutX="29.0" layoutY="31.0" text="Skay" textFill="#a8a6a6">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="29.0" layoutY="64.0" text="lhcaomail@gmial.com" textFill="#a8a6a6">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="29.0" layoutY="96.0" text="2020/5/17" textFill="#a8a6a6">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="29.0" layoutY="128.0" text="http://github.com/0linlin0" textFill="#a8a6a6">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children></AnchorPane>
+      <Pane layoutX="82.0" layoutY="22.0" prefHeight="50.0" prefWidth="1198.0" style="-fx-background-color: #2F3136; -fx-background-radius: 0 10 0 0;">
+         <children>
+<!--            <JFXScrollPane fx:id="history_scroll" prefHeight="49.0" prefWidth="957.0" />-->
+            <Label fx:id="value_label" alignment="CENTER" contentDisplay="CENTER" layoutX="960.0" layoutY="-7.0" prefHeight="70.0" prefWidth="240.0" text="Info" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <Label fx:id="value_label1" alignment="CENTER" contentDisplay="CENTER" layoutX="-12.0" layoutY="-10.0" prefHeight="70.0" prefWidth="240.0" text="Vullist" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <AnchorPane layoutX="310.0" layoutY="72.0" prefHeight="628.0" prefWidth="730.0" style="-fx-border-color: #2F3136; -fx-background-color: #2F3136;">
+         <children>
+            <SplitPane orientation="VERTICAL" prefHeight="628.0" prefWidth="730.0" style="-fx-background-color: #2F3136;" stylesheets="@css/stile.css">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="187.0" prefWidth="728.0" style="-fx-background-color: #202225;">
+                     <children>
+                        <TextArea layoutX="34.0" layoutY="276.0" prefHeight="283.0" prefWidth="684.0" promptText="aaa" text="bbb" />
+                        <Label layoutX="42.0" layoutY="41.0" text="CVE-2020-11000" textFill="#fffdfd">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="39.0" layoutY="91.0" text="组件：" textFill="#fffdfd">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="90.0" layoutY="91.0" text="Weblogic" textFill="#fffdfd">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="39.0" layoutY="124.0" text="影响版本：" textFill="#fffdfd">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="118.0" layoutY="124.0" text="10.3.6.0  12.1.3.0 12.2.3.0" textFill="#fffdfd">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="39.0" layoutY="154.0" text="漏洞编号：" textFill="#fffdfd">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="118.0" layoutY="154.0" text="CVE-2020-11000" textFill="#fffdfd">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="39.0" layoutY="182.0" text="CVSS 评分：" textFill="#fffdfd">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="137.0" layoutY="182.0" text="9.8" textFill="#fffdfd">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="39.0" layoutY="214.0" text="漏洞影响：" textFill="#fffdfd">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="124.0" layoutY="214.0" text="无需登录 远程代码执行" textFill="#fffdfd">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="39.0" layoutY="242.0" text="漏洞概述：" textFill="#fffdfd">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

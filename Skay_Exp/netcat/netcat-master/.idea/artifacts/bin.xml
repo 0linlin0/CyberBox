@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact name="bin">
+    <output-path>$PROJECT_DIR$/bin</output-path>
+    <root id="root">
+      <element id="module-output" name="netcat" />
+    </root>
+  </artifact>
+</component>
